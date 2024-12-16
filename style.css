@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Christmas Theme</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(to bottom, #00416a, #e4e5e6);
+            color: #fff;
+            text-align: center;
+            overflow-x: hidden;
+        }
+        header {
+            background-color: #c70039;
+            padding: 20px;
+            font-size: 2rem;
+            font-weight: bold;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+        .snowflake {
+            position: absolute;
+            top: -10px;
+            font-size: 1.5rem;
+            opacity: 0.8;
+            animation: fall 10s linear infinite;
+        }
+        @keyframes fall {
+            to {
+                transform: translateY(100vh) rotate(360deg);
+            }
+        }
+        .tree {
+            margin: 50px auto;
+            width: 0;
+            height: 0;
+            border-left: 60px solid transparent;
+            border-right: 60px solid transparent;
+            border-bottom: 100px solid #28a745;
+        }
+        .tree:nth-child(2) {
+            border-bottom-color: #34ce57;
+            margin-top: -50px;
+        }
+        .tree:nth-child(3) {
+            border-bottom-color: #45d76e;
+            margin-top: -50px;
+        }
+        .trunk {
+            background: #8b4513;
+            width: 20px;
+            height: 40px;
+            margin: -10px auto 0;
+        }
+        footer {
+            margin-top: 50px;
+            font-size: 1.2rem;
+        }
+    </style>
+</head>
+<body>
+    <header>Merry Christmas!</header>
+    <!-- Animated Snowflakes -->
+    <div class="snowflake" style="left: 10%; animation-duration: 5s;">❄️</div>
+    <div class="snowflake" style="left: 30%; animation-duration: 7s;">❄️</div>
+    <div class="snowflake" style="left: 50%; animation-duration: 6s;">❄️</div>
+    <div class="snowflake" style="left: 70%; animation-duration: 8s;">❄️</div>
+    <div class="snowflake" style="left: 90%; animation-duration: 4s;">❄️</div>
+
+    <!-- Christmas Tree -->
+    <div class="tree"></div>
+    <div class="tree"></div>
+    <div class="tree"></div>
+    <div class="trunk"></div>
+
+    <footer>
+        Wishing you a season filled with love, joy, and peace. 🎄🎁
+    </footer>
+</body>
+</html>
